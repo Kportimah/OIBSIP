@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Matemasie&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*this is a nav bar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(11, 11, 82);
+  border-bottom: 1px solid #444444;
+}
+
+.logo {
+  width: 120px;
+  height: 50px;
+  background-color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: black;
+}
+
+.cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjust column widths as needed */
+}
+
+.sect-1 {
+  background-color: rgb(11, 11, 82);
+  cursor: pointer;
+}
+
+.info-1 {
+  color: white;
+  font-size: xx-large;
+  text-align: center;
+  font-size: 26px;
+  padding-top: 10px;
+  cursor: pointer;
+  margin: 10%;
+}
+
+.info-2 {
+  color: white;
+  font-size: larger;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 10%;
+}
+
+.btn-info {
+  color: White;
+  background-color: rgba(255, 64, 0, 0.927);
+  margin: 0 auto;
+  height: 40px;
+  padding: 20px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+  transition: 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+:hover.btn-info {
+  color: rgba(255, 64, 0, 0.927);
+  background-color: white;
+  transition: 0.4s;
+}
+
+.sec2-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*This is our seconds container style codes*/
+
+.container {
+  width: 100%;
+  background-color: rgba(172, 56, 17, 0.849);
+}
+.container11 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* Adjust column widths as needed */
+}
+
+.container1 {
+  border: 0px solid black;
+  padding: 10px;
+}
+
+.imagegid {
+  width: 100%;
+  margin: 0px;
+}
+
+.content-info {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  padding: 110px;
+  font-size: 20px;
+}
+
+.info-sec00 {
+  padding: 10px;
+  font-size: large;
+  cursor: pointer;
+  color: white;
+}
+
+/*this is the part where I style the third contianer*/
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Adjust column widths as needed */
+}
+
+.container3 {
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+.container4 {
+  background-color: whitesmoke;
+}
+
+.imagegid {
+  width: 100%;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.about-me {
+  font-size: 100px;
+  margin: 0px;
+  padding-left: 17%;
+}
+
+.about-me-sub1 {
+  margin: 10%;
+}
+
+.about-me-sub-2 {
+  margin: 10%;
+}
+
+.workwith-me-btn {
+  color: white;
+  background-color: black;
+  width: 130px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 16.5px;
+  transition: 0.25s;
+  font-weight: bolder;
+}
+
+:hover.workwith-me-btn {
+  color: black;
+  background-color: whitesmoke;
+  transition: 0.25s;
+}
+
+.workwith-me-btn:active {
+  background-color: blue;
+  color: white;
+}
+
+#what-you-will-learn {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(233, 228, 228);
+}
+
+.learning-item {
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+}
+
+.learning-item img {
+  width: 430px;
+  height: 410px;
+  border-radius: 5%;
+}
+
+.description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+  text-align: center;
+}
+
+.learning-item:hover .description {
+  opacity: 1;
+}
