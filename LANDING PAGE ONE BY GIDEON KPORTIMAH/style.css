@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section:nth-child(1){
+    min-height: 50vh;
+    background: no-repeat url("images/hero.jpg");
+    background-size: cover;
+    padding: 10px 40px;
+}
+.hero{
+    margin-top: 20px;
+    width: 100%;
+    height: calc(100% - 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+.hero h1{
+    font-size: 48px;
+}
+.hero p{
+    font-weight: bold;
+}
+button{
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: green;
+    color: #fff;
+}
+
+section:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 100px;
+}
+.mini{
+    /* height: 250px; */
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+.mini div:not(.links) {
+    flex: 1;
+}
+.mini div img:not(.links img){
+    height: 200px;
+    width: 100%;
+    object-fit: contain;
+}
+.right{
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+.left-1{
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;  
+}
+.right-2{
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+.right-2 p{
+    font-size: clamp(13px, 1.2vw, 100px);
+}
+.links{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    gap: 5px;
+}
+.links img{
+    height: 20px;
+}
+.mini-last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.mini:last-child{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width: 750px) {
+    body{
+        overflow-x: hidden;
+    }
+    .mini {
+        height: initial;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mini img:not(.links img){
+        height: 150px;
+    }
+    .count{
+        color: green;
+    }
+}
+
+
+section:nth-child(3){
+    height: 100vh;
+    padding: 30px 100px;
+    background: no-repeat center url("images/map.svg");
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.count{
+    width: 100%;
+    text-align: end;
+}
+.count h1{
+    font-size: 48px;
+}
