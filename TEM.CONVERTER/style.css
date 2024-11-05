@@ -1,0 +1,44 @@
+/* this is where the styles for the container comes*/
+.container{
+    width: 500px;
+    height: fit-content;
+    border: 3px solid rgba(0,0,0,0.1);
+    font-family: sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto;
+    margin: 0 auto;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+    background-color: cyan;
+    margin-top: 10%;
+}
+/* this is where the styles for the input field*/
+
+input:not(radio){
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* the cursor becomes a pointer when it's being hovered on*/
+button{
+    cursor: pointer;
+}
+
+/* this is where the styles for the convert button comes*/
+
+.convertBtn{
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 0 auto; 
+    transition: 0.25s;  
+    width: 190px;
+    color: black;
+}
+/* these are the sedu class that transform the buttons*/
+
+:hover.convertBtn{
+    transition: 0.25s;   
+    color: white;
+    background-color: black;
+}
+
